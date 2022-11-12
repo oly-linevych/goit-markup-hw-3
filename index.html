@@ -5,45 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>студія</title>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap">
     <link rel="stylesheet" href=" https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/styles.css">
   </head>
   <body>
+    <div class="container container-body">
+      <header class="header">
+        <nav class="main-nav">
+          <a href="/" class="logo-web"> Web <span class="logo-studio"> Studio</span></a>
     
-    <header class="header">
-      <div class="container">
-      <nav class="main-nav">
-        <a href="/" class="logo-web"> Web <span class="logo-studio"> Studio</span></a>
-        
-        <ul class="navigation">
-          <li class="navigation-item"><a href="#" class="item">Студія</a></li>
-          <li class="navigation-item"><a href="./portfolio.html" class="item">Портфоліо</a></li>
-          <li class="navigation-item"><a href="#" class="item">Контакти</a></li>
-        </ul>
-     
-      <ul class="adress-header">
-        <li class="navigation-item"><a href="mailto:" class="adress-item"> info@devstudio.com </a></li>
-        <li class="navigation-item"><a href="tel:+380961111111" class="adress-item">+38 096 111 11 11</a></li>
-      </ul>
-      </nav>
-      </div>
-    </header>
-   
+          <ul class="navigation">
+            <li class="navigation-item"> <a href="#" class="item">Студія</a></li>
+            <li class="navigation-item"><a href="./index.html" class="item">Портфоліо</a></li>
+            <li class="navigation-item"><a href="#" class="item">Контакти</a></li>
+          </ul>
+    
+          <ul class="adress-header">
+            <li class="navigation-item"><a href="mailto:" class="adress-item"> info@devstudio.com </a></li>
+            <li class="navigation-item"><a href="tel:+380961111111" class="adress-item">+38 096 111 11 11</a></li>
+          </ul>
+        </nav>
+      </header>
+    </div>
     <main>
-      
-      
         <section class="hero">
-          <div class="container, hero-title">
+          <div class="container, hero-container">
           <h1 class="slogan">Ефективні рішення для вашого бізнесу</h1>
           <button type="button" class="main-button">Замовити послугу</button>
         </div>
         </section>
-     
-      <section class="preferens">
-        <div class="container container-preferens" >
-        <h2>переваги</h2>
-        <ul class="list-style">
+     <!-------------------------PREFERENS----------------->
+        <section class="preferens">
+        <div class="container">
+        <h2 class="hide">переваги</h2>
+        <ul class="list-preferens">
           <li class="caption-text">
             <h3 class="caption">УВАГА ДО ДЕТАЛЕЙ</h3>
             <p class="text">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
@@ -63,19 +59,23 @@
         </ul>
         </div>
       </section>
-
-      <div class="container">
+      
+     <!----------------------------EXAMPLE----------------->
       <section class="example container-example">
+        <div class="container">
         <h2 class="subtitle"> Чим ми займаємося</h2>
-        <ul class="list-style">
-          <li><img src="images/box1.jpg" alt="монітор, клавіатура" width="370" height="294" /></li>
-          <li><img src="images/box2.jpg" alt="телефон і ноутбук" width="370" height="294" /></li>
-          <li><img src="images/box3.jpg" alt="планшет" width="370" height="294" /></li>
+        <ul class="list-example">
+          <li class="image-example"><img src="images/box1.jpg" alt="монітор, клавіатура" width="370" height="294" /></li>
+          <li class="image-example"><img src="images/box2.jpg" alt="телефон і ноутбук" width="370" height="294" /></li>
+          <li class="image-example"><img src="images/box3.jpg" alt="планшет" width="370" height="294" /></li>
         </ul>
-      </section>
-      </div>
-      <section class="team">
-        <div class="container container-team">
+        </div>
+        </section>
+      
+    <!----------------------------TEAM----------------->
+        <section class="team, container-team">
+        <div class="container ">
+        
         <h2 class="submite-text">Наша команда</h2>
         <ul class="list-style">
           <li class="card">
@@ -100,19 +100,21 @@
           </li>
         </ul>
         </div>
-      </section>
+      </section> 
     </main>
     
     <footer class="footer">
-      <div class="container">
+      <div class="container"> 
+        <pre>
       <a href="/" class="logo-web"> Web <span class="logo-studio"> Studio</span></a>
       <address class="address-list">
         <a class="item-adress" href="#">Київ, пр-т Лесі Українки,26 </a>
         <a class="item-mail" href="mailto:">info@devstudio.com</a>
         <a class="item-tel" href="tel:+380961111111">+38 096 111 11 11</a>
       </address>
+      </pre>
       </div>
     </footer>
-   
+
   </body>
 </html>
