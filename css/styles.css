@@ -17,7 +17,9 @@ html {
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
-    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+
 }
 
 body {
@@ -26,7 +28,15 @@ body {
     sans-serif;
     margin: 0;
 }
-
+.header{
+    
+    border-top: 0;
+    border-right: 0;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-block-color: #ECECEC;
+    border-left: 0;
+}
 .main-nav {
     display: flex;
     align-items: center;
@@ -79,6 +89,16 @@ body {
 .navigation .item:focus {
     color: var(--wite-color);
     background-color: var(--brand-color); 
+}
+
+.item {
+    color: var(--main-color);
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 1.62;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    list-style: none;
 }
 
 .adress-header{
@@ -141,20 +161,19 @@ body {
     font-size: 16px;
     font-weight: 700;
     line-height: 1.87;
-    display: flex;
+    display: block;
     align-items: center;
     letter-spacing: 0.06em;
     border-radius: 4px;
     padding-top: 10px;
     padding-right: 32px;
-    padding-bottom: 10px;
+    padding-bottom: 10px; 
     padding-left: 32px;
     text-align: center;
     margin-top: 30px;
     margin-bottom: 0px;
     margin-right: auto;
     margin-left:  auto;
-    width: 216px;
     
 }
 .main-button:hover {
@@ -173,8 +192,8 @@ body {
 
 /*---------------------------------------PREFERENTS---------------*/
 .preferens {
-    margin-top: 107px;
-    margin-bottom: 0px; 
+    padding-top: 107px;
+ 
 }
 .caption {
     margin-top: 0px;
@@ -226,8 +245,7 @@ body {
 
 
 .container-example {
-    margin-top: 94px;
-    margin-bottom: 0px;
+    padding-top: 94px;
 }
 .subtitle {
 
@@ -238,9 +256,8 @@ body {
     letter-spacing: 0.03em;
     text-decoration: none;
     list-style: none;
-    margin-block-end: 0;
-    margin-block-start: 0;
-    margin-bottom: 16px;
+    margin-top: 0;
+    margin-bottom: 50px;
 }
 
 .list-example {
@@ -259,8 +276,8 @@ body {
 
 /*---------------------------------------TEAM---------------*/
 .container-team {
-    margin-top: 94px;
-    margin-bottom: 0px;
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .list-style {
@@ -273,7 +290,7 @@ body {
     padding-top: 0;
     padding-left: 0;
     padding-left: 0;
-    padding-bottom: 94px;
+    padding-bottom: 0;
     text-decoration: none;
     list-style: none;
 }
@@ -296,7 +313,7 @@ body {
 
 .team {
     margin-top:  94px;
-    margin-bottom:  0;
+    margin-bottom:  94px;
    
 
 }
@@ -309,7 +326,7 @@ body {
     letter-spacing: 0.03em;
     text-decoration: none;
     list-style: none;
-    margin-top: 30px;
+    margin-top: 0;
     margin-bottom: 10px;
 }
  .headline-text {
@@ -319,15 +336,17 @@ body {
     font-weight: 400;
     line-height: 1.18;
     letter-spacing: 0.03em;
-    margin-top: 0px;
-    margin-bottom: 30px;
-    
+    margin: 0;
+   
 }
-.card {
-border-bottom-width: 1px;
-border-bottom-style: solid;
-border-bottom-color: #757575;
-}
+
+.wrapper-team {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #EEEEEE;}
+
 
 .card:not(:last-child) {
     margin-right: 30px;
@@ -336,23 +355,14 @@ border-bottom-color: #757575;
 
 /*----------------------PORTFOLIO-------------------*/
 .filter-main {
-    margin-top: 94px;
-    margin-bottom: 94px;
+padding-top: 94px;
+padding-bottom: 94px;
     }
 button {
     font-family: inherit;
 }
 
-.item {
-    color: var(--main-color);
-    background-color: #F5F4FA;
-    cursor: pointer;
-    font-size: 16px;
-    line-height: 1.62;
-    letter-spacing: 0.03em;
-    text-decoration: none;
-    list-style: none;
-}
+
 
 .item:hover {
     color: var(--wite-color);
@@ -360,7 +370,7 @@ button {
 }
 
 .item:focus {
-    color:var(--wite-color);
+    color: var(--wite-color);
     background-color: var(--brand-color);
 }
 .filter .filter-item { 
@@ -373,13 +383,14 @@ button {
     line-height: 1.62;
     text-align: center;
     letter-spacing: 0.03em;
-    border-radius: 4px;
     padding-top: 6px;
     padding-right: 22px;
     padding-bottom: 6px;
     padding-left: 22pt;
     text-align: center;
-    margin-right: 8px;
+   border: 0;
+   border-radius: 4px;
+   margin: 0;
    
 }
 
@@ -391,6 +402,8 @@ button {
     text-decoration: none;
     list-style: none;
     padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
     
 }
 
@@ -418,10 +431,8 @@ button {
     justify-content: center;
     margin-top: 50px;
     margin-bottom: 0;
-    padding-top: 0;
-    padding-left: 0;
-    padding-left: 0;
-    padding-bottom: 94px;
+    padding: 0;
+    
     text-decoration: none;
     list-style: none;
    
@@ -429,11 +440,9 @@ button {
 .info {
     margin-right: 30px;
     margin-bottom: 30px;
-    border-bottom-width: 1px;
-    border-bottom-style: solid;
-    border-bottom-color: #757575;
     text-decoration: none;
     list-style: none;
+   
 
 }
 
@@ -443,19 +452,14 @@ button {
 }
 
 .info .info-title {
-    margin-top: 20px;
     margin-bottom: 4px;
+    margin-top: 0;
     text-align: left;
     text-decoration: none;
     list-style: none;
 }
-.info .info-text {
-    margin-top: 0px;
-    margin-bottom: 20px;
-    text-align: left;
-    text-decoration: none;
-    list-style: none;
-}
+
+
 .info .info-title {
     color: var(--main-color);
     font-size: 18px;
@@ -471,17 +475,17 @@ button {
     letter-spacing: 0.03em;
     text-decoration: none;
     list-style: none;
+    text-align: left;
+    margin: 0;
 }
 
-.text-link {
+.info .text-link {
+    display: block;
     text-decoration: none;
     list-style: none;
 }
 
-    
-.footer {
-    margin: 0;
-}
+
 .item-adress {
     color: var(--wite-color);
     background: #2F303A;
@@ -514,8 +518,33 @@ button {
     text-decoration: none;
     list-style: none;
 }
+
+.wrapper {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #EEEEEE;
+}
+.no-gap {
+    display: block;
+}
 .footer {
     background: #2F303A;
     display: block;
-    
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.logo-footer {
+    color: var(--wite-color);
+}
+ .item-adress {
+    display: block;
+}
+.item-mail {
+    display: block;
+}
+ 
+.item-tel {
+    display: block;
 }
