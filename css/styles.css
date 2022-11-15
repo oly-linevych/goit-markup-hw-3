@@ -28,19 +28,23 @@ body {
     sans-serif;
     margin: 0;
 }
-.header{
+
+
     
-    border-top: 0;
-    border-right: 0;
+    .section-header {
+    
     border-bottom-width: 1px;
     border-bottom-style: solid;
     border-block-color: #ECECEC;
-    border-left: 0;
-}
+   
+    }
+
 .main-nav {
     display: flex;
     align-items: center;
+   
 }
+
 .logo-web {
     color:var(--brand-color);
     font-family: "Raleway";
@@ -64,6 +68,10 @@ body {
     text-decoration: none;
     list-style: none;
     margin-left: 93px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background: none;
+    padding: 0;
 }
 
 .navigation .navigation-item:not(:last-child) {
@@ -83,12 +91,14 @@ body {
 
  }
 .navigation .item:hover {
-    color: var(--wite-color); 
-    background-color: var(--brand-color);
+    color: var(--brand-color); 
+    background: none;
+   
  }
 .navigation .item:focus {
-    color: var(--wite-color);
-    background-color: var(--brand-color); 
+    color: var(--brand-color);
+    background: none;
+     
 }
 
 .item {
@@ -106,6 +116,8 @@ body {
     text-decoration: none;
     list-style: none;
     margin-left: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
     padding: 0;
 }
 .adress-header .navigation-item +.navigation-item {
@@ -134,10 +146,10 @@ body {
 
 .hero {
     background: #2F303A;
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
-.hero-container {
-    height: 587px;
-}
+
 
 .slogan {
     color: var(--wite-color);
@@ -152,7 +164,7 @@ body {
     margin-right: auto;
     margin-bottom: auto;
     width: 696px;
-    padding-top: 187px;
+    
 }
 .main-button {
     color: var(--wite-color);
@@ -165,6 +177,7 @@ body {
     align-items: center;
     letter-spacing: 0.06em;
     border-radius: 4px;
+    border: none;
     padding-top: 10px;
     padding-right: 32px;
     padding-bottom: 10px; 
@@ -187,10 +200,18 @@ body {
 
 .hide {
     display: none;
+    margin: 0;
 }
 
 
 /*---------------------------------------PREFERENTS---------------*/
+img {
+    margin: 0;
+    padding: 0;
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
 .preferens {
     padding-top: 107px;
  
@@ -244,9 +265,14 @@ body {
 /*---------------------------------------EXAMPLE---------------*/
 
 
-.container-example {
+.section {
     padding-top: 94px;
+    padding-bottom: 94px;
 }
+ .container-example {
+    padding-bottom: 0;
+  }
+
 .subtitle {
 
     color: var(--main-color);
@@ -276,8 +302,8 @@ body {
 
 /*---------------------------------------TEAM---------------*/
 .container-team {
-    padding-top: 94px;
-    padding-bottom: 94px;
+
+    background: #F5F4FA;
 }
 
 .list-style {
@@ -328,6 +354,7 @@ body {
     list-style: none;
     margin-top: 0;
     margin-bottom: 10px;
+   
 }
  .headline-text {
     text-align: center;
@@ -337,6 +364,7 @@ body {
     line-height: 1.18;
     letter-spacing: 0.03em;
     margin: 0;
+    
    
 }
 
@@ -354,10 +382,7 @@ body {
 
 
 /*----------------------PORTFOLIO-------------------*/
-.filter-main {
-padding-top: 94px;
-padding-bottom: 94px;
-    }
+
 button {
     font-family: inherit;
 }
@@ -467,6 +492,8 @@ button {
     letter-spacing: 0.06em;
     text-decoration: none;
     list-style: none;
+    padding-left: 24px;
+    padding-right: 24px;
 }
 .info .info-text {
     color: #757575;
@@ -477,6 +504,8 @@ button {
     list-style: none;
     text-align: left;
     margin: 0;
+    padding-left: 24px;
+    padding-right: 24px;
 }
 
 .info .text-link {
@@ -485,12 +514,22 @@ button {
     list-style: none;
 }
 
+.address {
+    padding: 0;
+    margin-top: 20px;
+    margin-bottom: 0;
+    text-decoration: none;
+    list-style: none;
+}
+.point-address:not(:last-child) {
+            margin-bottom: 9px;
+}
 
-.item-adress {
+.item-address {
     color: var(--wite-color);
     background: #2F303A;
     font-style: normal;
-    
+
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
